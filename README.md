@@ -19,7 +19,7 @@ This bot copies (not forward) messages from a source channel (which doesn't have
     docker run -it \
         --env-file=.env \
         -v td-data:/tmp/.tdlib_files \
-        MetaverseCoin/tgboot1
+        metaversecoin/tgboot1
     ```
 4. After logging in, you will see your chat names and their chat id. Copy chat ids of source and destination chats and put them inside `App Configuration` section of the `.env` file.
 5. Run the container in detached mode and it will do the job:
@@ -27,6 +27,6 @@ This bot copies (not forward) messages from a source channel (which doesn't have
      docker run -d \
         --env-file=.env \
         -v td-data:/tmp/.tdlib_files \
-        MetaverseCoin/tgboot1
+        metaversecoin/tgboot1
     ```
 
